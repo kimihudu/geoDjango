@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Generic Page - Massively by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/test.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Travel</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="/">HOME</a></li>
+                <li class="active"><a href="transport">Tranpsort</a></li>
+                <li><a href="mapview">Map View</a></li>
+                <li><a href="contactus">Contact Us</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class=row>
+                <div class="6u 12u$(small)">
+                    <h4>Travel search</h4>
+                    <br>
+                    <input type="text" placeholder="Departing from">
+                    </br>
+                    <input type="text" placeholder="Arriving at">
+                    </br>
+                    <a href="transport.html" style="font-size: 16px;margin-bottom:15% ">SEARCH  &raquo</a>
+                    </br>
+                </div>
+
+                <div class="6u 12u$(small)">
+                    <div class="6u 12u$(small)">
+                        <h4>Map View</h4>
+                        <p style="height:270px;width:270px; background-color:aqua"></p>
+                    </div>
+
+                </div>
+                <article>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')">Car</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Bus</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Plane</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tok')">Walk</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Explore</button>
+
+                    </div>
+                    <br>
+
+                    <div id="London" class="tabcontent">
+                        <p style="margin-top:10px">ssssssssss</p>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <p style="margin-top:10px">straight right back left.</p>
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <p style="margin-top:10px">turn left .</p>
+                    </div>
+
+                    <div id="Tok" class="tabcontent">
+                        <p style="margin-top:10px"> turn right.</p>
+                    </div>
+
+            </div>
+            </article>
+        </div>
+        <footer id="footerid">
+            <div class="footercontainer">
+                <img src="./images/fotimg.jpg" alt="footer_img" class="footerimg">
+            </div>
+
+        </footer>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+ {% load static %}
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Massively by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />
+    <noscript>
+        <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <p style="font-size:34px">here<sub style="font-size:34px">2</sub>there</p>
+            <p>Travel World With Us!</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <p class="logo" style="font-size:34px">here<sub style="font-size:34px">2</sub>there</p>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'transport' %}">Tranpsort</a></li>
+                <li><a href="{% url 'mapview' %}">Map View</a></li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <span class="date">Travel Search</span>
+                    <div id="search">
+
+                        <input type="text" placeholder="Departing from" autofocus="autofocus" class="departtxt">
+                        </br>
+
+                        <input type="text" placeholder="Arriving at" autofocus="autofocus" class="arrivetxt">
+                        </br>
+                        <a href="transport.html" class="searchbtn">SEARCH  &raquo</a></div>
+                    </br>
+
+                </header>
+                <img src="{% static 'assets/images/qqqq.jpg' %}" alt="qouteimg" class="image main">
+            </article>
+
+
+            <article>
+                <header class="major">
+                    <h3>Mostly Visited places </h3>
+                </header>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+                <div class="containerv">
+                    <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
+                    <div class="overlayv">
+                        <div class="textv">Hello World</div>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footerid">
+            <div class="footercontainer">
+                <img src="{% static 'assets/images/fotimg.jpg' %}" alt="footer_img" class="footerimg">
+                <div style="top: 8px">Footer</div>
+
+                <!-- <h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+						 -->
+
+            </div>
+
+        </footer>
+
+        <!-- Copyright
+				<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>-->
+
+        <!-- Scripts -->
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+        <script src="{% static 'assets/js/skel.min.js' %}"></script>
+        <script src="{% static 'assets/js/util.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

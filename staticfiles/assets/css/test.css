@@ -1,0 +1,158 @@
+/* search */
+#search
+{
+    padding: 2em 0 0 0;
+    position: relative;
+}
+/* .lblsearch
+{
+    position: absolute;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    padding: 0 0 2rem 0; 
+    color: black;
+} */
+
+.departtxt , .arrivetxt
+{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    padding: 0 0 1rem 0;
+    border: 3px solid blue;
+    border-spacing: 25px;
+    
+
+}
+.searchbtn
+{
+    position: relative;
+    align-items:center;
+    width: 100px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(32, 32, 36);
+    font: 22px bold;
+    background: rgb(151, 184, 204);
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5px;
+}
+/* qouteImage */
+
+ /* .qouteimg
+ {
+    position: relative;
+    padding: 0 2rem 0 0 ;
+     opacity: .9;
+    height: 320px;
+    margin: 0 ;
+    display: flex;
+    color: black;
+    cursor:default;
+    max-width: 72em;
+    width: calc(100% - 4rem);
+    vertical-align: baseline;
+ } */
+
+
+/* most visited places */
+
+.containerv {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    
+  }
+
+ 
+  .imagev {
+    display:block;
+    width: 100%;
+    height: auto; 
+    
+  }
+  
+  .overlayv {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    margin: 10px;
+    width: auto;
+    height:0;
+    transition: .5s ease;
+  }
+  .containerv:hover .overlayv {
+    bottom: 0;
+    height: 95%;
+  }
+  
+  .textv {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+/* Transportpage main */
+  
+#tab
+{
+    position: relative;
+    padding: 2rem 0 0 0 ;
+}
+
+
+/* #tranptmain
+  {
+    display: flex;
+    background-color: white;
+    color: #909498;
+    cursor: default;
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 4rem);
+    max-width: 72rem;
+    z-index: 2;
+  }
+  #tranptmain > section:first-child
+   {
+    border-left: 0;
+   }
+   #tranptmain > section
+   {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 4rem 4rem 2rem 4rem;
+   } */
+  
+
+
+
+
+  /* footer id */
+
+  .footerimg
+  {
+    position: relative;
+    /*background-image: url("./images/fotimg.jpeg");*/
+     opacity: .9;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    cursor:default;
+    max-width: 72em;
+    width: calc(100% - 4rem);
+    vertical-align: baseline;
+    
+  }
+
