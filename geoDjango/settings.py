@@ -132,3 +132,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # google API key:
 # AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s
+# test
