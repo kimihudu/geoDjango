@@ -4,28 +4,21 @@
     padding: 2em 0 0 0;
     position: relative;
 }
-/* .lblsearch
-{
-    position: absolute;
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 100%;
-    padding: 0 0 2rem 0; 
-    color: black;
-} */
 
-.departtxt , .arrivetxt
+
+#departtxt , #arrivetxt
 {
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 100%;
-    padding: 0 0 1rem 0;
-    border: 3px solid blue;
-    border-spacing: 25px;
+    padding:2rem0 0 0 0;
+    border: 2px solid rgb(90, 128, 131);
+    border-spacing: 15px;
+    font-size:28px;
     
 
 }
-.searchbtn
+#searchbtn
 {
     position: relative;
     align-items:center;
@@ -103,12 +96,75 @@
 
 /* Transportpage main */
   
-#tab
+
+.containerv
 {
     position: relative;
-    padding: 2rem 0 0 0 ;
+    text-align: center;
+    color: white;
+    
 }
 
+ .searchform
+{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    margin: 2rem 0 0 4rem;
+    background-color: rgb(36, 33, 33);
+    opacity: 0.7;
+    height: 13rem;
+    width:15rem;
+    border-radius: 8px;
+   
+}
+ .titlesrch
+{
+    color: white;
+    padding: 2rem 0 0 1rem;
+    font-size: 22px;
+    margin-left: 2rem;
+}
+#srchfield
+{
+    margin-left: 2rem;
+    font-size: 22px;
+    padding: 0 0 0 0rem;
+}
+#trsptstart , #trsptdestntn
+{
+    border: none;
+    color:rgb(233, 241, 233);
+    outline: none;
+    margin-left:2rem;
+    position: relative;
+    vertical-align: top;
+    font-size: 19px;
+    overflow: visible;
+    width:60%;
+    border-bottom:  1px solid white;
+
+}
+
+
+input:focus{
+    outline: none;
+}
+
+#tserachbtn
+{
+    border: none;
+    color: rgb(250, 249, 249);
+    text-align: center;
+    padding: 1rem 0 0 0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 0 2rem;
+    cursor: pointer;
+   
+
+}
 
 /* #tranptmain
   {

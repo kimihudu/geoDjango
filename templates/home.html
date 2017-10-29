@@ -1,19 +1,21 @@
  {% load static %}
 <!DOCTYPE HTML>
 <html>
-
-<head>
-    <title>Massively by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />
-    <noscript>
-        <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
-    </noscript>
-</head>
-
-<body class="is-loading">
+    
+    <head>
+        <title>
+            here2there
+        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />
+        <noscript>
+            <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
+        </noscript>
+    </head>
+    
+    <body class="is-loading">
 
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
@@ -56,12 +58,12 @@
                     <span class="date">Travel Search</span>
                     <div id="search">
 
-                        <input type="text" placeholder="Departing from" autofocus="autofocus" class="departtxt">
+                        <input type="text" placeholder="Starting point" autofocus="autofocus" id="departtxt">
                         </br>
 
-                        <input type="text" placeholder="Arriving at" autofocus="autofocus" class="arrivetxt">
+                        <input type="text" placeholder="Destination" autofocus="autofocus" id="arrivetxt">
                         </br>
-                        <a href="transport.html" class="searchbtn">SEARCH  &raquo</a></div>
+                        <a href="{% url 'transport' %}" id="searchbtn">SEARCH  &raquo</a></div>
                     </br>
 
                 </header>
@@ -138,8 +140,8 @@
         <footer id="footerid">
             <div class="footercontainer">
                 <img src="{% static 'assets/images/fotimg.jpg' %}" alt="footer_img" class="footerimg">
-                <div style="top: 8px">Footer</div>
-<br>
+                <div style="top: 8px;font-size:19px">Footer</div>
+
                 <!-- <h3>Social</h3>
 								<ul class="icons alt">
 									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
