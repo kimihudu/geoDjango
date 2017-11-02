@@ -3,7 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+// var MY_KEY = "AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s";
 (function($) {
 
 	skel.breakpoints({

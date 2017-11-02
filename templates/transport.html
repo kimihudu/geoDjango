@@ -16,15 +16,15 @@
 </head>
 
 <body class="is-loading">
-    
+
         <!-- Wrapper -->
         <div id="wrapper">
-    
+
             <!-- Header -->
             <header id="header">
                 <p class="logo" style="font-size:34px">here<sub style="font-size:34px" >2</sub>there</p>
             </header>
-    
+
             <!-- Nav -->
             <nav id="nav">
                 <ul class="links">
@@ -37,10 +37,10 @@
                     <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                     <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-    
+
                 </ul>
             </nav>
-    
+
             <!-- Main -->
             <div id="main">
                 <div class="containersrch">
@@ -52,12 +52,12 @@
                             <input type="text" id="trsptstart" placeholder="Starting point">
                             <input type="text" id="trsptdestntn" placeholder="Destination">
                             <br>
-                            <a href={% url '#' %} id="tserachbtn">SEARCH  &raquo</a>
+                            <a href="{% url 'home' %}" id="tserachbtn">SEARCH  &raquo</a>
                         </form>
                     </div>
-    
+
                 </div>
-    
+
                 <div class="8u 12u$(small)">
                     <article>
                         <div class="tab">
@@ -67,37 +67,37 @@
                             <button class="tablinks" onclick="openCity(event, 'Tokyo')">Plane</button>
                             <button class="tablinks" onclick="openCity(event, 'Tok')">Walk</button>
                             <button class="tablinks" onclick="openCity(event, 'Tokyo')">Explore</button>
-    
+
                         </div>
                         <br>
-    
+
                         <div id="London" class="tabcontent">
                             <p style="margin-top:10px">ssssssssss</p>
                         </div>
-    
+
                         <div id="Paris" class="tabcontent">
                             <p style="margin-top:10px">straight right back left.</p>
                         </div>
-    
+
                         <div id="Tokyo" class="tabcontent">
                             <p style="margin-top:10px">turn left .</p>
                         </div>
-    
+
                         <div id="Tok" class="tabcontent">
                             <p style="margin-top:10px"> turn right.</p>
                         </div>
-    
+
                 </div>
                 </article>
-    
+
             </div>
             <footer id="footerid">
                 <div class="footercontainer">
                     <img src="./images/fotimg.jpg" alt="footer_img" class="footerimg">
                 </div>
-    
+
             </footer>
-    
+
             <script>
                 function openCity(evt, cityName) {
                     var i, tabcontent, tablinks;
