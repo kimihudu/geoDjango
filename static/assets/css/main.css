@@ -1,11 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 /* Reset */
 
@@ -1872,7 +1867,7 @@
 
 /* Button */
 
-	input[type="submit"],
+	/* input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2050,7 +2045,7 @@
 			button.special:hover,
 			.button.special:hover {
 				background-color: #18bfef;
-			}
+			} */
 
 /* Form */
 
