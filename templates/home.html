@@ -1,21 +1,21 @@
  {% load static %}
 <!DOCTYPE HTML>
 <html>
-    
-    <head>
-        <title>
-            here2there
-        </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-        <link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />
-        <noscript>
-            <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
-        </noscript>
-    </head>
-    
-    <body class="is-loading">
+
+<head>
+    <title>
+        here2there
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />
+    <noscript>
+        <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
+    </noscript>
+</head>
+
+<body class="is-loading">
 
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
@@ -55,6 +55,7 @@
             <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
+
                         <span class="date">Travel Search</span>
                         <div class="bgserch">
                                 <div id="search">
@@ -96,11 +97,12 @@
                 
 
 
-            <article>
+            <article id="recentArea">
                 <header class="major">
                     <h3>Mostly Visited places </h3>
                 </header>
 
+                {% comment %}
                 <div class="containerv">
                     <img src="{% static 'assets/images/pic09.jpg' %}" alt="Avatar" class="imagev">
                     <div class="overlayv">
@@ -155,6 +157,10 @@
                     <div class="overlayv">
                         <div class="textv">Hello World</div>
                     </div>
+                </div>{% endcomment %}
+
+                <div id="attributions" style="background:#f1f1f1">
+                    You'll see here the attributions when there are any
                 </div>
 
             </article>
@@ -186,12 +192,19 @@
 					</div>-->
 
         <!-- Scripts -->
+
         <script src="{% static 'assets/js/jquery.min.js' %}"></script>
         <script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
         <script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
         <script src="{% static 'assets/js/skel.min.js' %}"></script>
         <script src="{% static 'assets/js/util.js' %}"></script>
         <script src="{% static 'assets/js/main.js' %}"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&libraries=geometry,places"></script>
+        {% comment %}
+        <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=init"></script>{% endcomment %} {% comment %}
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&libraries=places&callback=initAutocomplete"></script>{% endcomment %}
+        <script src="{% static 'assets/js/home.js' %}"></script>
+
 
 </body>
 
