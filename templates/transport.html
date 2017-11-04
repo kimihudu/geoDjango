@@ -13,89 +13,101 @@
     <noscript>
         <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
     </noscript>
+
 </head>
 
 <body class="is-loading">
 
-        <!-- Wrapper -->
-        <div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-            <!-- Header -->
-            <header id="header">
-                <p class="logo" style="font-size:34px">here<sub style="font-size:34px" >2</sub>there</p>
-            </header>
+        <!-- Header -->
+        <header id="header">
+            <p class="logo" style="font-size:34px">here<sub style="font-size:34px">2</sub>there</p>
+        </header>
 
-            <!-- Nav -->
-            <nav id="nav">
-                <ul class="links">
-                    <li><a href="{% url 'home' %}">HOME</a></li>
-                    <li class="active"><a href="{% url 'transport' %}">Tranpsort</a></li>
-                    <li><a href="{% url 'mapview' %}">Map View</a></li>
-                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
-                </ul>
-                <ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <!-- Nav -->
+        <nav id="nav" style="height:100%">
+            <ul class="links">
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li class="active"><a href="{% url 'transport' %}">Tranpsort</a></li>
+                <li><a href="{% url 'mapview' %}">Map View</a></li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 
-                </ul>
-            </nav>
+            </ul>
+        </nav>
 
-            <!-- Main -->
-            <div id="main">
-                <div class="containersrch">
-                    <img src="{% static 'assets/images/worldmap.gif' %}" alt="Norway" style="width:100%;">
-                    <div class="searchform">
-                        <form>
-                            <h4 class="titlesrch">Travel search:</h4>
-                            <br>
-                            <input type="text" id="trsptstart" placeholder="Starting point">
-                            <input type="text" id="trsptdestntn" placeholder="Destination">
-                            <br>
-                            <a href="{% url 'home' %}" id="tserachbtn">SEARCH  &raquo</a>
-                        </form>
+        <!-- Main -->
+        <div id="main">
+
+            <div class="containersrch">
+                {% comment %}<img src="{% static 'assets/images/worldmap.gif' %}" alt="Norway" style="width:100%;">{% endcomment %}
+                <div id="map"></div>
+                <div class="searchform">
+                    <form>
+                        <h4 class="titlesrch">Travel search:</h4>
+                        <br>
+                        <input type="text" id="trsptstart" placeholder="Starting point">
+                        <input type="text" id="trsptdestntn" placeholder="Destination">
+                        <br>
+                        <a href="{% url 'home' %}" id="tserachbtn">SEARCH  &raquo</a>
+                    </form>
+                </div>
+            </div>
+
+            <div class="8u 12u$(small)">
+                <article>
+                    <div class="tab">
+                        <h4>choose vehicle</h4>
+                        <button class="tablinks" onclick="openCity(event, 'London')">Car</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Bus</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Plane</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tok')">Walk</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Explore</button>
+
+                    </div>
+                    <br>
+
+                    <div id="London" class="tabcontent">
+                        <p style="margin-top:10px">ssssssssss</p>
                     </div>
 
-                </div>
+                    <div id="Paris" class="tabcontent">
+                        <p style="margin-top:10px">straight right back left.</p>
+                    </div>
 
-                <div class="8u 12u$(small)">
-                    <article>
-                        <div class="tab">
-                            <h4>choose vehicle</h4>
-                            <button class="tablinks" onclick="openCity(event, 'London')">Car</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">Bus</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Plane</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tok')">Walk</button>
-                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Explore</button>
+                    <div id="Tokyo" class="tabcontent">
+                        <p style="margin-top:10px">turn left .</p>
+                    </div>
 
-                        </div>
-                        <br>
-
-                        <div id="London" class="tabcontent">
-                            <p style="margin-top:10px">ssssssssss</p>
-                        </div>
-
-                        <div id="Paris" class="tabcontent">
-                            <p style="margin-top:10px">straight right back left.</p>
-                        </div>
-
-                        <div id="Tokyo" class="tabcontent">
-                            <p style="margin-top:10px">turn left .</p>
-                        </div>
-
-                        <div id="Tok" class="tabcontent">
-                            <p style="margin-top:10px"> turn right.</p>
-                        </div>
-
-                </div>
-                </article>
+                    <div id="Tok" class="tabcontent">
+                        <p style="margin-top:10px"> turn right.</p>
+                    </div>
 
             </div>
-            <footer id="footerid">
-                <div class="footercontainer">
-                    <img src="./images/fotimg.jpg" alt="footer_img" class="footerimg">
-                </div>
+            </article>
 
+<<<<<<< HEAD
+        </div>
+        <footer id="footerid">
+            <div class="footercontainer">
+                <img src="./images/fotimg.jpg" alt="footer_img" class="footerimg">
+            </div>
+
+        </footer>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+=======
             </footer>
 <<<<<<< HEAD
     
@@ -115,8 +127,16 @@
                     }
                     document.getElementById(cityName).style.display = "block";
                     evt.currentTarget.className += " active";
+>>>>>>> d0c4f771898517d397a47d4c146beb6a2250b9aa
                 }
-            </script>
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
 
         <!-- Scripts -->
         <script src="{% static 'assets/js/jquery.min.js' %}"></script>
@@ -125,6 +145,10 @@
         <script src="{% static 'assets/js/skel.min.js' %}"></script>
         <script src="{% static 'assets/js/util.js' %}"></script>
         <script src="{% static 'assets/js/main.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script src="{% static 'assets/js/searchResult.js' %}"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&callback=initMap"></script>
+
 
 
 </body>
