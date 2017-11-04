@@ -55,6 +55,7 @@
             <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
+<<<<<<< HEAD
                     <span class="date">Travel Search</span>
                     <div id="search">
 
@@ -68,10 +69,48 @@
 
                     </div>
                     </br>
+=======
+>>>>>>> d0c4f771898517d397a47d4c146beb6a2250b9aa
 
+                        <span class="date">Travel Search</span>
+                        <div class="bgserch">
+                                <div id="search">
+
+                                        <div class="rowIst" style="margin-left:3rem; display: inline;">
+                                                <!-- func to set currnt loc -->
+                                                <button id="curlocbtn" style=" float:left;" onClick="setloc( );">
+                                                </button>
+                                                <input type="search" placeholder="Starting point" autofocus="autofocus" id="departtxt">
+
+                                        </div>
+
+                                        <!-- func onclick to reverse string -->
+                                        <!-- <div class="revbtn" style="width:3rem;height:3rem; float:left;">
+                                                        <button id="reversebtn" onClick="copy( );"></button>
+                                                    </div> -->
+                                </div>
+
+                                <div id="search">
+
+                                        <div class="rowIInd" style="margin-left:3rem; display: inline;">
+                                                <!-- func to set destination loc -->
+                                                <button id="deslocbtn" style=" float:left;" onClick="setloc( );"></button>
+                                                <input type="search" placeholder="Destination" autofocus="autofocus" id="arrivetxt">
+
+                                        </div>
+                                </div>
+                                <div class="btn3" style="width:6rem;height:3rem; clear: left;display: table;">
+                                        <a href="{% url '#' %}" id="searchbtn">SEARCH &raquo</a>
+                                </div>
+                        </div>
                 </header>
-                <img src="{% static 'assets/images/qqqq.jpg' %}" alt="qouteimg" class="image main">
-            </article>
+        </article>
+
+        <!-- Image with Quote -->
+        <article>
+            <img src="{% static 'assets/images/qqqq.jpg' %}" alt="qouteimg" class="image main">
+        </article>
+                
 
 
             <article id="recentArea">

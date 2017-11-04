@@ -92,6 +92,7 @@
             </div>
             </article>
 
+<<<<<<< HEAD
         </div>
         <footer id="footerid">
             <div class="footercontainer">
@@ -106,6 +107,27 @@
                 tabcontent = document.getElementsByClassName("tabcontent");
                 for (i = 0; i < tabcontent.length; i++) {
                     tabcontent[i].style.display = "none";
+=======
+            </footer>
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 87e07b2c93ad7e0e40e51832fcfb770d5b2e53cb
+
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+>>>>>>> d0c4f771898517d397a47d4c146beb6a2250b9aa
                 }
                 tablinks = document.getElementsByClassName("tablinks");
                 for (i = 0; i < tablinks.length; i++) {

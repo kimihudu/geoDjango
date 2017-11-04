@@ -1872,7 +1872,7 @@
 
 /* Button */
 
-	input[type="submit"],
+	/* input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -2050,11 +2050,11 @@
 			button.special:hover,
 			.button.special:hover {
 				background-color: #18bfef;
-			}
+			} */
 
 /* Form */
 
-	form {
+	/* form {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2387,7 +2387,7 @@
 
 	.formerize-placeholder {
 		color: #909498 !important;
-	}
+	} */
 
 /* Icon */
 
