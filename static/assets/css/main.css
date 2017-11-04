@@ -4485,16 +4485,4 @@
 
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 100% !important;
-		width: 100% !important;
 
-
-      }
-
-	  .containersrch{
-		  position: relative;
-		  height: 50%;
-
-
-	  }

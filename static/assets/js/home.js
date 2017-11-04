@@ -16,6 +16,8 @@ $(document).on('ready', function () {
 
     $(window).load(function () {
 
+        getLocation();
+
         $('#btnGetCurrentLoc').on('click', function (e) {
             e.preventDefault();
             getLocation();
@@ -127,6 +129,7 @@ $(document).on('ready', function () {
             Cookies.set("currentLoc", currentLoc);
             Cookies.set("destinationLoc", destinationLoc);
             document.location.href = 'transport';
+            console.log(Cookies);
 
         });
 

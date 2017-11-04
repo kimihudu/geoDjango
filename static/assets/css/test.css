@@ -1,9 +1,9 @@
 /* search */
 
 .bgserch
-{   
+{
     position: relative;
-    background-image: url("../images/mapbg.jpg");
+    /*background-image: url("../images/mapbg.jpg");*/
     background-repeat: no-repeat;
 }
 #search
@@ -12,8 +12,8 @@
     position: relative;
     margin: 0rem 0 0 0 ;
     display:flex;
-  
- 
+
+
 }
 
 
@@ -26,7 +26,7 @@
     border: 2px solid rgb(90, 128, 131);
     border-spacing: 12px;
     font-size:22px;
-    overflow:auto;  
+    overflow:auto;
     width:35rem;
     border-radius: 5px;
     margin: 2rem 0 0 0rem;
@@ -38,7 +38,7 @@
     background-image: url("../images/curloc.png");
     background-repeat: no-repeat;
     height: 35px;
-    width: 33px; 
+    width: 33px;
     background-color: transparent;
     border-style: none;
 }
@@ -50,11 +50,11 @@
     background-image: url("../images/desloc.png");
     background-repeat: no-repeat;
     height: 35px;
-    width: 33px; 
+    width: 33px;
     background-color: transparent;
     border-style: none;
 
-} 
+}
 #reversebtn
 {
     position: relative;
@@ -65,15 +65,15 @@
     background-image: url("../images/ud4.png");
     background-repeat: no-repeat;
     height: 35px;
-    width: 33px; 
+    width: 33px;
     background-color: transparent;
-   
+
 }
-#searchbtn  
+#searchbtn
 {
     position: absolute;
     width: 150px;
-    height: 3rem; 
+    height: 3rem;
     align-content:Left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(32, 32, 36);
@@ -91,17 +91,17 @@
     position: relative;
     display: inline-block;
     padding: 15px;
-    
+
   }
 
- 
+
   .imagev {
     display:block;
     width: 100%;
-    height: auto; 
-    
+    height: auto;
+
   }
-  
+
   .overlayv {
     position: absolute;
     bottom: 100%;
@@ -119,9 +119,9 @@
     bottom: 0;
     height: 95%;
   }
-  
+
   .textv {
-    white-space: nowrap; 
+    white-space: nowrap;
     color: white;
     font-size: 20px;
     position: absolute;
@@ -133,14 +133,14 @@
   }
 
 /* Transportpage main */
-  
+
 
 .containerv
 {
     position: relative;
     text-align: center;
     color: white;
-    
+
 }
 /* #main .searchform
 {
@@ -149,6 +149,18 @@
     left: 25px;
     background-color: rgb(121, 23, 23);
 } */
+
+
+.containersrch{
+		  position: relative;
+		  height: 50%;
+	  }
+
+#map {
+        height: 500px !important;
+		width: 100% !important;
+      }
+
  .searchform
 {
     position: absolute;
@@ -160,7 +172,7 @@
     height: 12rem;
     width:17rem;
     border-radius: 8px;
-   
+
 }
  .titlesrch
 {
@@ -206,7 +218,7 @@ input:focus{
     font-size: 16px;
     margin: 0 0 0 2rem;
     cursor: pointer;
-   
+
 
 }
 /* contact page */
@@ -226,7 +238,7 @@ input:focus{
 .contactcontainer
 {
     position: relative;
-    text-align: center; 
+    text-align: center;
     /* background-image: url("assets/images/contctbg.jpg");  */
     display: inline-block;
     height: 72rem;
@@ -245,7 +257,7 @@ input:focus{
     width:33rem;
     border-radius: 8px;
     background-color: rgb(198, 224, 216);
-    
+
 }
 .containercontactt
 {
@@ -257,7 +269,7 @@ input:focus{
     border-radius: 12px;
     background-image: url("../images/cntct2.png");
     background-repeat: no-repeat;
-    
+
 }
 .containercontactt02
 {
@@ -269,7 +281,7 @@ input:focus{
     border-radius: 8px;
     background-image: url("../images/cntct1.png");
     background-repeat: no-repeat;
-    
+
 }
 
 #contctuser, #contctemail
@@ -332,9 +344,9 @@ input:focus{
     border-radius: 8px;
 }
 
-  
-input[type="text"].contactcontainer::-webkit-input-placeholder  
-{ 
+
+input[type="text"].contactcontainer::-webkit-input-placeholder
+{
     color: rgb(7, 6, 6);
     font-size: 14px;
   }
@@ -356,6 +368,6 @@ input[type="text"].contactcontainer::-webkit-input-placeholder
     max-width: 72em;
     width: calc(100% - 4rem);
     vertical-align: baseline;
-    
+
   }
 

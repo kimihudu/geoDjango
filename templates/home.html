@@ -62,8 +62,7 @@
 
                                         <div class="rowIst" style="margin-left:3rem; display: inline;">
                                                 <!-- func to set currnt loc -->
-                                                <button id="curlocbtn" style=" float:left;" onClick="setloc( );">
-                                                </button>
+                                                <button id="curlocbtn" style=" float:left;"></button>
                                                 <input type="search" placeholder="Starting point" autofocus="autofocus" id="departtxt">
 
                                         </div>
@@ -78,13 +77,13 @@
 
                                         <div class="rowIInd" style="margin-left:3rem; display: inline;">
                                                 <!-- func to set destination loc -->
-                                                <button id="deslocbtn" style=" float:left;" onClick="setloc( );"></button>
+                                                <button id="deslocbtn" style=" float:left;"></button>
                                                 <input type="search" placeholder="Destination" autofocus="autofocus" id="arrivetxt">
 
                                         </div>
                                 </div>
                                 <div class="btn3" style="width:6rem;height:3rem; clear: left;display: table;">
-                                        <a href="{% url '#' %}" id="searchbtn">SEARCH &raquo</a>
+                                        <a href="" id="searchbtn">SEARCH &raquo</a>
                                 </div>
                         </div>
                 </header>
@@ -94,7 +93,7 @@
         <article>
             <img src="{% static 'assets/images/qqqq.jpg' %}" alt="qouteimg" class="image main">
         </article>
-                
+
             <article id="recentArea">
                 <header class="major">
                     <h3>Mostly Visited places </h3>
