@@ -65,6 +65,7 @@
                         <input type="text" placeholder="Destination" autofocus="autofocus" id="arrivetxt">
                         </br>
                         <a href="{% url 'transport' %}" id="searchbtn">SEARCH  &raquo</a>
+
                     </div>
                     </br>
 
@@ -175,11 +176,13 @@
         <script src="{% static 'assets/js/skel.min.js' %}"></script>
         <script src="{% static 'assets/js/util.js' %}"></script>
         <script src="{% static 'assets/js/main.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&libraries=geometry,places"></script>
         {% comment %}
         <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=init"></script>{% endcomment %} {% comment %}
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&libraries=places&callback=initAutocomplete"></script>{% endcomment %}
         <script src="{% static 'assets/js/home.js' %}"></script>
+
 
 
 </body>

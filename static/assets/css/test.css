@@ -15,14 +15,14 @@
     border: 2px solid rgb(90, 128, 131);
     border-spacing: 15px;
     font-size:28px;
-    
+
 
 }
 #searchbtn
 {
     position: relative;
     align-items:center;
-    width: 100px; 
+    width: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(32, 32, 36);
     font: 22px bold;
@@ -54,17 +54,17 @@
     position: relative;
     display: inline-block;
     padding: 15px;
-    
+
   }
 
- 
+
   .imagev {
     display:block;
     width: 100%;
-    height: auto; 
-    
+    height: auto;
+
   }
-  
+
   .overlayv {
     position: absolute;
     bottom: 100%;
@@ -81,9 +81,9 @@
     bottom: 0;
     height: 95%;
   }
-  
+
   .textv {
-    white-space: nowrap; 
+    white-space: nowrap;
     color: white;
     font-size: 20px;
     position: absolute;
@@ -95,14 +95,14 @@
   }
 
 /* Transportpage main */
-  
+
 
 .containerv
 {
     position: relative;
     text-align: center;
     color: white;
-    
+
 }
 
  .searchform
@@ -116,7 +116,8 @@
     height: 13rem;
     width:15rem;
     border-radius: 8px;
-   
+    position: absolute;
+
 }
  .titlesrch
 {
@@ -162,7 +163,7 @@ input:focus{
     font-size: 16px;
     margin: 0 0 0 2rem;
     cursor: pointer;
-   
+
 
 }
 
@@ -189,7 +190,7 @@ input:focus{
     flex-shrink: 1;
     padding: 4rem 4rem 2rem 4rem;
    } */
-  
+
 
 
 
@@ -209,6 +210,6 @@ input:focus{
     max-width: 72em;
     width: calc(100% - 4rem);
     vertical-align: baseline;
-    
+
   }
 

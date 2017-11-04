@@ -53,7 +53,7 @@ $(document).on('ready', function () {
 
         }
 
-// get img street view from list placeID
+        // get img street view from list placeID
         function renderRecentList() {
 
             var containerAtt = document.getElementById('attributions');//$('#attributions');
@@ -67,7 +67,7 @@ $(document).on('ready', function () {
 
                 var id = nearLoc[i].place_id;
 
-                service.getDetails({ placeId:id},
+                service.getDetails({ placeId: id },
                     function (place, status) {
                         if (status === google.maps.places.PlacesServiceStatus.OK) {
                             var lat = place.geometry.location.lat();
@@ -114,6 +114,20 @@ $(document).on('ready', function () {
 
         $('#searchbtn').on('click', function (e) {
             e.preventDefault();
+
+            var currentLoc = $('#departtxt').val();
+            var destinationLoc = $('#arrivetxt').val();
+
+            if (currentLoc == null || destinationLoc == null) {
+                alert("please check your destination");
+                return;
+            }
+
+
+            Cookies.set("currentLoc", currentLoc);
+            Cookies.set("destinationLoc", destinationLoc);
+            document.location.href = 'transport';
+
         });
 
     });
