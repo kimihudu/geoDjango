@@ -169,7 +169,7 @@
     left: 16px;
     margin: 2rem 0 0 4rem;
     background-color: rgb(61, 57, 57);
-    opacity: 0.7;
+    opacity: 0.5;
     height: 12rem;
     width:17rem;
     border-radius: 8px;
@@ -222,6 +222,8 @@ input:focus{
 
 
 }
+
+
 /* contact page */
 
 #contactmain
