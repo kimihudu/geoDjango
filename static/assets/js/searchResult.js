@@ -5,6 +5,7 @@ $(() => {
     var directionsDisplay;
     var map;
     var newSearch = false;
+    var destinationLoc;
 
     var trsptstartTxt = document.getElementById('trsptstart');
     var trsptdestTxt = document.getElementById('trsptdest');
@@ -126,6 +127,7 @@ $(() => {
 
         // trsptstartTxt.value = Cookies.get('currentLoc');
         // trsptdestTxt.value = Cookies.get('destinationLoc');
+        Cookies.set("destinationLoc", trsptdestTxt.value);
     }
 
 })
