@@ -31,7 +31,7 @@
             <ul class="links">
                 <li><a href="{% url 'home' %}">HOME</a></li>
                 <li class="active"><a href="{% url 'transport' %}">Tranpsort</a></li>
-                <li><a href="{% url 'mapview' %}">Map View</a></li>
+                <li><a href="{% url 'takeatour'' %}">Take a Tour</a>/a></li>
                 <li><a href="{% url 'contactus' %}">Contact Us</a></li>
             </ul>
             <ul class="icons">
@@ -44,59 +44,92 @@
 
         <!-- Main -->
         <div id="main">
-
-            <div class="containersrch">
-                <!--<img src="{% static 'assets/images/worldmap.gif' %}" alt="Norway" style="width:100%;">-->
-                <div id="map"></div>
-                <div class="searchform">
-                    <form>
-                        <h4 class="titlesrch">Travel search:</h4>
-                        <br>
-                        <input type="text" id="trsptstart" placeholder="Starting point">
-                        <input type="text" id="trsptdest" placeholder="Destination">
-                        <br>
-                        <a href="{% url 'home' %}" id="tsearchbtn">SEARCH  &raquo</a>
-                    </form>
+            
+                <div class="containersrch">
+                    <!--<img src="{% static 'assets/images/worldmap.gif' %}" alt="Norway" style="width:100%;">-->
+                    <div id="map"></div>
+                    <div class="searchform">
+                        <form>
+                            <h4 class="titlesrch">Travel search:</h4>
+                            <br>
+                            <input type="text" id="trsptstart" placeholder="Starting point">
+                            <input type="text" id="trsptdest" placeholder="Destination">
+                            <br>
+                            <a href="{% url 'home' %}" id="tsearchbtn">SEARCH  &raquo</a>
+                        </form>
+                    </div>
                 </div>
-            </div>
-
-            <div class="8u 12u$(small)">
-                <article>
-                    <div class="tab">
-                        <h4>choose vehicle</h4>
-                        <button class="tablinks">WALKING</button>
-                        <button class="tablinks">BICYCLING</button>
-                        <button class="tablinks">DRIVING</button>
-                        <button class="tablinks">BUS</button>
-                        <button class="tablinks">RAIL</button>
-                        <button class="tablinks">SUBWAY</button>
-                        <button class="tablinks">TRAIN</button>
-
-
-                        <!--<button class="tablinks">EXPLORE</button>-->
-
-                    </div>
+            
+                <div class=row>
+                    <div class="8u 12u$(small)">
+                        <article>
+                            <h4>choose vehicle</h4>
+                            <div class="tab" align="center">
+                                <!-- <button class="tablinks">WALKING</button>
+                                    <button class="tablinks">BICYCLING</button>
+                                    <button class="tablinks">DRIVING</button>
+                                    <button class="tablinks">BUS</button>
+                                    <button class="tablinks">RAIL</button>
+                                    <button class="tablinks">SUBWAY</button>
+                                    <button class="tablinks">TRAIN</button> -->
+            
+                                <div class="selectVehicle">
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/manwalking.png' %}">
+                                    </button>
+            
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/mancycling.png' %}">
+                                    </button>
+            
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/car-front.png' %}">
+                                    </button>
+            
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/bus.png' %}">
+                                    </button>
+            
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/train.png' %}">
+                                    </button>
+            
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/subway.png' %}">
+                                    </button>
+            
+                                    <button class="tablinks">
+                                        <img class="vehicleicon" src="{% static 'assets/images/train.png' %}">
+                                    </button>
+            
+                                </div>
+                            </div>
+            
                     <br>
-
+            
                     <div id="directPanel" class="tabcontent"></div>
-
+            
                     <!--<div id="Bus" class="tabcontent">
-                        <p style="margin-top:10px">straight right back left.</p>
-                    </div>
-
-                    <div id="Plane" class="tabcontent">
-                        <p style="margin-top:10px">turn left .</p>
-                    </div>
-
-                    <div id="Walk" class="tabcontent">
-                        <p style="margin-top:10px"> turn right.</p>
-                    </div>-->
-
-
-
+                                    <p style="margin-top:10px">straight right back left.</p>
+                                </div>
+            
+                                <div id="Plane" class="tabcontent">
+                                    <p style="margin-top:10px">turn left .</p>
+                                </div>
+            
+                                <div id="Walk" class="tabcontent">
+                                    <p style="margin-top:10px"> turn right.</p>
+                                </div>-->
+                </article>
             </div>
-            </article>
+            <div class="4u 12u$(small)" align="right">
+                <article>
+                    <img src="assets/images/42.jpg" class="dirctnimg">
+                </article>
+            </div>
         </div>
+    </div>
+
         <footer id="footerid">
             <div class="footercontainer">
                 <img src="./images/fotimg.jpg" alt="footer_img" class="footerimg">

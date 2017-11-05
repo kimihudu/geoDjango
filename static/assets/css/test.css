@@ -141,7 +141,7 @@
     position: relative;
     text-align: center;
     color: white;
-
+    
 }
 /* #main .searchform
 {
@@ -150,18 +150,6 @@
     left: 25px;
     background-color: rgb(121, 23, 23);
 } */
-
-
-.containersrch{
-		  position: relative;
-		  height: 50%;
-	  }
-
-#map {
-        height: 500px !important;
-		width: 100% !important;
-      }
-
  .searchform
 {
     position: absolute;
@@ -173,9 +161,8 @@
     height: 12rem;
     width:17rem;
     border-radius: 8px;
-
+   
 }
-
  .titlesrch
 {
     color: white;
@@ -189,10 +176,10 @@
     font-size: 22px;
     padding: 0 0 0 0rem;
 } */
-#trsptstart , #trsptdest
+#trsptstart , #trsptdestntn
 {
     border: none;
-    color: white;
+    color:rgb(7, 8, 7);
     outline: none;
     margin-left:2rem;
     position: relative;
@@ -220,8 +207,62 @@ input:focus{
     font-size: 16px;
     margin: 0 0 0 2rem;
     cursor: pointer;
+   
 
+}
+.tab
+{
+    background-color: lightblue;
+    position: relative;
+    width:100%;
+    height:auto;
+    border-radius: 12px;
+   
+}
+.selectVehicle
+{   
+    position: absolute;
+    align-content: center;
+    background-color:rgb(59, 190, 230);
+    margin:  0 0 0 8rem;
+    width:auto;
+    overflow: auto;
+    border-radius: 6px;      
+}
+.tablinks
+{
+    width:3rem;
+    height:3rem;
+    background-color:rgb(59, 190, 230);
+    margin: 0 0 0 0; 
+    cursor: pointer;
+    border:none 0;
+    border-radius: 40%;
+} 
+.selectVehicle .tablinks:hover ,.selectVehicle .tablinks:active ,
+.selectVehicle .tablinks:focus , .selectVehicle .tablinks:focus
+{
+    background-color: #91f1e9;
+    border-radius: 40%;
+}
 
+.tabcontent
+{
+    position: relative;
+    text-align: center;
+    line-height: 0.7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 8);
+    font: 22px bold;
+    background-color: rgb(214, 252, 246);
+    padding: 10px 10px 5px 10px;
+    margin:2rem 2rem 2rem 2rem;
+    border-radius: 6px;   
+}
+.dirctnimg
+{
+    margin:3rem 0 0 2rem;
+    opacity: .8;
 }
 /* contact page */
 
