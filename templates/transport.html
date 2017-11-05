@@ -53,9 +53,9 @@
                         <h4 class="titlesrch">Travel search:</h4>
                         <br>
                         <input type="text" id="trsptstart" placeholder="Starting point">
-                        <input type="text" id="trsptdestntn" placeholder="Destination">
+                        <input type="text" id="trsptdest" placeholder="Destination">
                         <br>
-                        <a href="{% url 'home' %}" id="tserachbtn">SEARCH  &raquo</a>
+                        <a href="{% url 'home' %}" id="tsearchbtn">SEARCH  &raquo</a>
                     </form>
                 </div>
             </div>
@@ -113,7 +113,7 @@
         <script src="{% static 'assets/js/main.js' %}"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <script src="{% static 'assets/js/searchResult.js' %}"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&callback=initMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&libraries=places&callback=initMap"></script>
 
 
 
