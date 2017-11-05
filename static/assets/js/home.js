@@ -13,10 +13,15 @@ $(document).on('ready', function () {
     var geocoder;
     var STREETVIEW = "AIzaSyAEQQSEgu8FzXr0y5dbwJd_Ftl4iB-ldVY";
 
+    var departtxt = document.getElementById('departtxt');
+    var arrivettxt = document.getElementById('arrivetxt');
+
 
     $(window).load(function () {
 
         getLocation();
+
+
 
         $('#btnGetCurrentLoc').on('click', function (e) {
             e.preventDefault();
@@ -30,6 +35,14 @@ $(document).on('ready', function () {
             } else {
                 alert("Geolocation is not supported by this browser.");
             }
+
+            // text predixt from google map
+            var autoDepart = new google.maps.places.SearchBox(departtxt);
+            var autoArrive = new google.maps.places.SearchBox(arrivettxt);
+
+
+
+
         }
 
 
@@ -92,23 +105,6 @@ $(document).on('ready', function () {
             }
 
         }
-
-
-        //send a query to get list location from nearLoc
-        // service.textSearch({ query: nearLoc }, function (results, status) {
-        //     if (status == google.maps.places.PlacesServiceStatus.OK) {
-        //         for (var i = 0; i < results.length; i++) {
-
-        //             console.log(results[i].name);
-        //             // var item = document.createElement('li');
-        //             // item.appendChild(document.createTextNode(results[i].name));
-        //             // document.getElementById('results').appendChild(item);
-        //         }
-        //     }
-        // });
-
-
-
 
         /**
          * search address path --> pass to stranport page
