@@ -3,99 +3,135 @@
 <html>
 
 <head>
-    <title>
-        here2there
-    </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-	<link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />
-	<link rel="stylesheet" href="{% static 'assets/css/gallery.css' %}"/>
-    <noscript>
-        <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
-    </noscript>
+	<title>
+		here2there
+	</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	<link rel="stylesheet" href="{% static 'assets/css/test.css' %}" />-->
+	<link rel="stylesheet" href="{% static 'assets/css/gallery.css' %}" />
+	<noscript>
+		<link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" />
+	</noscript>
 </head>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body data-gr-c-s-loaded="true">
+	<div class="container" style="opacity: 1;">
+		<div class="slider__wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<p class="logo" style="font-size:34px">here<sub style="font-size:34px" >2</sub>there</p>
-					</header>
+			<div class="slider__view">
+				<div class="view__img" style="">
 
-				<!-- Nav -->
-				<nav id="nav">
-					<ul class="links">
-						<li><a href="{% url 'home' %}">HOME</a></li>
-						<li><a href="{% url 'transport' %}">Tranpsort</a></li>
-						<li class="active"><a href="{% url 'takeatour' %}">Take a Tour</a></li>
-						<li><a href="{% url 'contactus' %}">Contact Us</a></li>
-					</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-					</nav>
+				</div>
+			</div>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="body">
-							<div class = "containerw">
-									<div class = "slider__wrapper">
-										<div class = "slider__view">
-											<div class = "view__img">
-												<!-- Rendering firt image from thumbs with jQuery-->
-												 
-											</div>
-										</div>
-						
-										<div class = "slider__thumbs">
-											<button class = "scroll__btn left__btn">
-												<img src="{% static 'assets/images/left-button.png' %}" alt = "left" width = "25px" height = "45px">
-											</button>
-											<button class = "scroll__btn right__btn">
-												<img src="{% static 'assets/images/right-button.png' %}" alt = "left" width = "25px" height = "45px">
-											</button>
-						
-											<div class = "thumbs__img" id = "thumbnail-holder">
-												<!-- Rendering thumbs with jQuery-->
-											</div>
-										</div>
-						
-									</div>
-								</div>
-							</div>
-						</div>
-				
-					
-					<footer id="footerid">
-						<div class="footercontainer">
-							<img src="{% static 'assets/images/fotimg.jpg' %}" alt="footer_img" class="footerimg">
-						</div>
-					
-					</footer>
-					</div>
-					<!-- Copyright -->
-					<div id="copyright">
-						<ul>
-							<li>&copy;[PYTHON]{DJANGO}</li>
-					
-						</ul>
-					</div>
-					
-					</div>
-				
+			<div class="slider__thumbs" style="width: 1440px;">
+				<button class="scroll__btn left__btn" style="height: 224px; display: none; opacity: 0.6;">
+            <img src="{% static 'assets/images/left-button.png' %}" alt="left" width="25px" height="45px">
+          </button>
+				<button class="scroll__btn right__btn" style="height: 224px; display: none; opacity: 0.6;">
+            <img src="{% static 'assets/images/right-button.png' %}" alt="left" width="25px" height="45px">
+          </button>
 
-		<!-- Scripts -->
-		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-        <script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
-        <script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
-        <script src="{% static 'assets/js/skel.min.js' %}"></script>
-        <script src="{% static 'assets/js/util.js' %}"></script>
-		<script src="{% static 'assets/js/main.js' %}"></script>
-		<script src="{% static 'assets/js/gallery.js' %}"></script>
-	</body>
+				<div class="thumbs__img" id="thumbnail-holder">
+					<!-- Rendering thumbs with jQuery-->
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<div id="attributions" style="background:#f1f1f1">
+	You'll see here the attributions when there are any
+</div>
+
+</body>
+<!-- Scripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+<script src="{% static 'assets/js/skel.min.js' %}"></script>
+<script src="{% static 'assets/js/util.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s&libraries=geometry,places&callback=init"></script>
+<script src="{% static 'assets/js/places.js' %}"></script>
+<script src="{% static 'assets/js/gallery.js' %}"></script>
+
 </html>
+
+<!--old section-->
+
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <p class="logo" style="font-size:34px">here<sub style="font-size:34px">2</sub>there</p>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'transport' %}">Tranpsort</a></li>
+                <li class="active"><a href="{% url 'takeatour' %}">Take a Tour</a></li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!--doesn't define in css class body-->
+            <div class="gallery">
+                <div class="containerw">
+                    <div class="slider__wrapper">
+                        <div class="slider__view">
+                            <div class="view__img">
+                                <!-- Rendering firt image from thumbs with jQuery-->
+
+                            </div>
+                        </div>
+
+                        <div class="slider__thumbs">
+                            <button class="scroll__btn left__btn">
+                                                <img src="{% static 'assets/images/left-button.png' %}" alt = "left" width = "25px" height = "45px">
+                                            </button>
+                            <button class="scroll__btn right__btn">
+                                                <img src="{% static 'assets/images/right-button.png' %}" alt = "left" width = "25px" height = "45px">
+                                            </button>
+
+                            <div class="thumbs__img" id="thumbnail-holder">
+                                <!-- Rendering thumbs with jQuery-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer id="footerid">
+            <div class="footercontainer">
+                <img src="{% static 'assets/images/fotimg.jpg' %}" alt="footer_img" class="footerimg">
+            </div>
+
+        </footer>
+    </div>
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul>
+            <li>&copy;[PYTHON]{DJANGO}</li>
+
+        </ul>
+    </div>
+    </div>
+</body>

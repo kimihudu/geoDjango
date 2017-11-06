@@ -50,13 +50,12 @@ $(() => {
     $('.tablinks').on('click', function (e) {
         e.preventDefault();
 
-        if (($(this).text() == "DRIVING") || ($(this).text() == "WALKING") || ($(this).text() == "BICYCLING")) {
-            var travelMode = $(this).text();
-
+        if (($(this).attr('id') == "DRIVING") || ($(this).attr('id') == "WALKING") || ($(this).attr('id') == "BICYCLING")) {
+            var travelMode = $(this).attr('id');
             directionsRequest.travelMode = travelMode;
         } else {
             var travelMode = "TRANSIT";
-            var transitMode = $(this).text();
+            var transitMode = $(this).attr('id');
             directionsRequest.travelMode = travelMode;
             directionsRequest.transitOptions.modes = [transitMode];
         }

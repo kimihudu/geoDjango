@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'contact/$', app_views.contact, name='contactus'),
     url(r'mapview/$', app_views.mapview, name='mapview'),
     url(r'transport/$', app_views.transport, name='transport'),
+    url(r'takeatour/$', app_views.takeatour, name='takeatour'),
     # url(r'^login/$', app_views.login, name='login'),
 
 ]

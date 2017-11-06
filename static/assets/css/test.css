@@ -141,7 +141,7 @@
     position: relative;
     text-align: center;
     color: white;
-    
+
 }
 /* #main .searchform
 {
@@ -161,7 +161,7 @@
     height: 12rem;
     width:17rem;
     border-radius: 8px;
-   
+
 }
  .titlesrch
 {
@@ -207,7 +207,7 @@ input:focus{
     font-size: 16px;
     margin: 0 0 0 2rem;
     cursor: pointer;
-   
+
 
 }
 .tab
@@ -217,28 +217,28 @@ input:focus{
     width:100%;
     height:auto;
     border-radius: 12px;
-   
+
 }
 .selectVehicle
-{   
+{
     position: absolute;
     align-content: center;
     background-color:rgb(59, 190, 230);
     margin:  0 0 0 8rem;
     width:auto;
     overflow: auto;
-    border-radius: 6px;      
+    border-radius: 6px;
 }
 .tablinks
 {
     width:3rem;
     height:3rem;
     background-color:rgb(59, 190, 230);
-    margin: 0 0 0 0; 
+    margin: 0 0 0 0;
     cursor: pointer;
     border:none 0;
     border-radius: 40%;
-} 
+}
 .selectVehicle .tablinks:hover ,.selectVehicle .tablinks:active ,
 .selectVehicle .tablinks:focus , .selectVehicle .tablinks:focus
 {
@@ -257,7 +257,7 @@ input:focus{
     background-color: rgb(214, 252, 246);
     padding: 10px 10px 5px 10px;
     margin:2rem 2rem 2rem 2rem;
-    border-radius: 6px;   
+    border-radius: 6px;
 }
 .dirctnimg
 {
@@ -413,4 +413,13 @@ input[type="text"].contactcontainer::-webkit-input-placeholder
     vertical-align: baseline;
 
   }
+
+  #map{
+      height: 512px;
+      width: 100%;
+  }
+ .gallery{
+     overflow: hidden;
+ }
+
 

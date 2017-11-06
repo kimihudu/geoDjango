@@ -1,3 +1,5 @@
+
+var data;
 function init() { }
 
 $(() => {
@@ -6,81 +8,54 @@ $(() => {
     var location;
     var geocoder;
     var STREETVIEW = "AIzaSyAEQQSEgu8FzXr0y5dbwJd_Ftl4iB-ldVY";
+    var API_KEY = "AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s";
+    var request = {
+        radius: 500,
+        query: 'coffee'
+    };
+
 
     init = function () {
 
+        var containerAtt = document.getElementById('attributions');//$('#attributions');
+        service = new google.maps.places.PlacesService(containerAtt);
         var geocoder = new google.maps.Geocoder();
         var address = Cookies.get('destinationLoc');
         geocoder.geocode({ 'address': address }, function (results, status) {
             if (status === 'OK') {
                 var place_id = results[0].place_id;
-                renderPic(place_id);
+                getListPic(place_id);
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
             }
         });
-    }
-
-    // get Address from current position
-    function showPosition(position) {
-
-
-
-        var lat = position.coords.latitude;
-        var lng = position.coords.longitude;
-
-        geocoder = new google.maps.Geocoder();             // create a geocoder object
-        location = new google.maps.LatLng(lat, lng);    // turn coordinates into an object
-        geocoder.geocode({ 'latLng': location }, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {           // if geocode success
-                // var add = results[0].formatted_address;         // if address found, pass to processing function
-                // console.log(add);
-
-                // get list placeID
-                destinationLoc = results;
-
-                // pass to streetView get img
-                renderRecentList();
-            }
-        })
 
     }
 
-    // get img street view from list placeID
-    function renderPic(place_id) {
 
-        var containerAtt = document.getElementById('attributions');//$('#attributions');
-        service = new google.maps.places.PlacesService(containerAtt);
+    // get list photos from place_id
+    function getListPic(place_id) {
 
-        // for (var i = 0; i < destinationLoc.length; i++) {
-
-            // var request = {
-            //     placeId: nearLoc[i].place_id
-            // };
-
-            // var id = destinationLoc[i].place_id;
-
-            service.getDetails({ placeId: place_id },
-                function (place, status) {
-                    if (status === google.maps.places.PlacesServiceStatus.OK) {
-                        var lat = place.geometry.location.lat();
-                        var lng = place.geometry.location.lng();
-
-                        var src = "https://maps.googleapis.com/maps/api/streetview?size=305x310&location="
-                            + lat + "," + lng + "&key=" + STREETVIEW;
-
-                        var element = `<div class="containerv">
-                                            <img src="`+ src + `" alt="Avatar" class="imagev">
-                                            <div class="overlayv">
-                                            <div class="textv">Hello World</div>
-                                            </div>
-                                            </div>`;
-
-                        $('.renderPic').append(element);
+        service.getDetails({ placeId: place_id },
+            function (results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    var dtCallback = [results.photos.length];
+                    for (var i = 0; i < results.photos.length; i++) {
+                        var picInfo = {};
+                        picInfo.id = i;
+                        picInfo.link = "#";
+                        // picInfo.src = results.photos[i].getUrl();
+                        picInfo.src = results.photos[i].getUrl({
+                            'maxWidth': 1800,
+                            'maxHeight': 1200
+                        });
+                        dtCallback.push(picInfo);
                     }
-                });
-
-        // }
-
+                    // workaround for index 0, it doesn't have img
+                    dtCallback.splice(0, 1);
+                    data = dtCallback;
+                    console.log(data);
+                }
+            });
     }
 })
