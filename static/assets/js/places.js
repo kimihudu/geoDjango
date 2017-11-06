@@ -7,11 +7,10 @@ $(() => {
     var service;
     var location;
     var geocoder;
-    var STREETVIEW = "AIzaSyAEQQSEgu8FzXr0y5dbwJd_Ftl4iB-ldVY";
-    var API_KEY = "AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s";
+    // var STREETVIEW = "AIzaSyAEQQSEgu8FzXr0y5dbwJd_Ftl4iB-ldVY";
+    // var API_KEY = "AIzaSyD_lIaoUCpZ5bu91ZcA2X0CwTLswtzWV1s";
     var request = {
         radius: 500,
-        query: 'coffee'
     };
 
 
@@ -25,11 +24,36 @@ $(() => {
             if (status === 'OK') {
                 var place_id = results[0].place_id;
                 getListPic(place_id);
+                // request.location = results[0].geometry.location;
+                // request.query = address;
+
+                // service.textSearch(request, callback);
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
             }
         });
 
+    }
+
+    function callback(results, status) {
+        if (status === "OK") {
+            var dtCallback = [results.photos.length];
+            for (var i = 0; i < results.photos.length; i++) {
+                var picInfo = {};
+                picInfo.id = i;
+                picInfo.link = "#";
+                // picInfo.src = results.photos[i].getUrl();
+                picInfo.src = results.photos[i].getUrl({
+                    'maxWidth': 1800,
+                    'maxHeight': 1200
+                });
+                dtCallback.push(picInfo);
+            }
+            // workaround for index 0, it doesn't have img
+            dtCallback.splice(0, 1);
+            data = dtCallback;
+            console.log(data);
+        }
     }
 
 

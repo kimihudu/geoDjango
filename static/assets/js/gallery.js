@@ -2,6 +2,20 @@
 //   return $.getJSON('data.json');
 // }
 
+// test data
+var data = [
+  {id: 0, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipOKc_YcqoP7uSnHpU7xxHnzt4lmgboz3OZNu6rk=w1800-h1200-k"},
+  {id: 1, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipOo5pScprBR4WGYN4KqAFSI-VWzhnPIU-Jip3Pr=w1800-h1200-k"},
+  {id: 2, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipMi3jJXHz_xLQW6bzG_VOVwp7fAhWkGdrBaGDVc=w1800-h1200-k"},
+  {id: 3, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipOYT7nS0DVnPvT1NRoVC6sG5mAFTOyOCo5tV8BN=w1800-h1200-k"},
+  {id: 4, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipNbivJKKqZ74WVonvHgqe3KQpHh9QYRQwR8qab0=w1800-h1200-k"},
+  {id: 5, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipP422l1mvvriGLZwz91klLBdvrG1r8iIOWcVLk=w1800-h1200-k"},
+  {id: 6, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipNDz6HWvYm3fOvxrb6sBnOEfY9AoNQyTqTbQxav=w1800-h1200-k"},
+  {id: 7, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipP6dQAWgNygDVwOlsk6npRz2Kk0sNJ9wV5euZzE=w1800-h1200-k"},
+  {id: 8, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipNB1Zs40XbIuR4GCtU-QG_k6GVCRcTdbQWl8e5f=w1800-h1200-k"},
+  {id: 9, link: "#", src: "https://lh3.googleusercontent.com/p/AF1QipNi07rdne3SlgZUihA8lDvzrg3EllHTNOk4BajX=w1800-h1200-k"}
+];
+
 $(window).on("load", function () {
   //  $.when(getData()).then(function (data) {
 
