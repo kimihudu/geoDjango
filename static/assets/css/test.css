@@ -13,8 +13,6 @@
     position: relative;
     margin: 0rem 0 0 0 ;
     display:flex;
-
-
 }
 
 
@@ -155,61 +153,74 @@
     position: absolute;
     top: 8px;
     left: 16px;
-    margin: 2rem 0 0 4rem;
-    background-color: rgb(61, 57, 57);
-    opacity: 0.7;
-    height: 12rem;
+    margin: 4rem 0 0 4rem;
+    background-color: rgb(72, 162, 223);
+    opacity: 0.8;
+    height: 10rem;
     width:17rem;
+    padding: 2rem 0 0 0;
     border-radius: 8px;
 
 }
  .titlesrch
 {
-    color: white;
+    color: rgb(9, 2, 68);
     padding: 2rem 0 0 1rem;
     font-size: 18px;
     margin-left: 2rem;
 }
+
 /* #srchfield
 {
     margin-left: 2rem;
     font-size: 22px;
     padding: 0 0 0 0rem;
 } */
-#trsptstart , #trsptdestntn
+
+#trsptstart , #trsptdest
 {
     border: none;
     color:rgb(7, 8, 7);
     outline: none;
-    margin-left:2rem;
+    margin: 0 0 0 2rem;
     position: relative;
     vertical-align: top;
     font-size: 15px;
-    overflow: visible;
-    width:80%;
-    border-bottom:  1px solid white;
-
+    width:70%;
+    font-weight:bold;
+    background-color: transparent;
+    border-bottom:  2px solid white;
+}
+::-webkit-input-placeholder
+{
+    color: black;
+    font-weight:bold;
+    font-size:15px;
 }
 
-
-input:focus{
+input:focus
+{
     outline: none;
 }
 
-#tserachbtn
+#tsearchbtn
 {
     border: none;
-    color: rgb(250, 249, 249);
+    color: #000000;
     text-align: center;
-    padding: 0 0 0 0;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 0 0 0 2rem;
+    margin: 10px 0 0 35px;
     cursor: pointer;
-
-
+    height:2rem;
+    width:5rem;
+    background-color: #FF7043;
+     box-shadow: 5px 5px 5px #1A237E;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .tab
 {
     background-color: lightblue;
@@ -419,7 +430,7 @@ input[type="text"].contactcontainer::-webkit-input-placeholder
       width: 100%;
   }
  .gallery{
-     overflow: hidden;
+
  }
 
 

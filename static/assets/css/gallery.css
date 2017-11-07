@@ -1,5 +1,6 @@
 body{
-  background: #111
+  background: #111;
+  overflow: hidden;
 }
 
 .container{
@@ -124,3 +125,119 @@ button:focus{
     height: 100px;
   }
 }
+
+/* take a tour navbar*/
+#bckgnd
+{
+  font-family:"Source Sans Pro", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#nav {
+    color: aqua;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.175);
+    height: 4rem;
+    line-height: 4rem;
+    margin: 0 auto 0 14rem;
+    overflow: hidden;
+    padding: 0 2rem 0 0;
+    position: relative;
+    width: calc(80% - 4rem);
+    max-width: 72rem;
+    z-index: 2;
+    vertical-align: baseline;
+}
+
+.logo
+{
+   font-size:34px;
+   color: white;
+   text-shadow: 2px 2px 8px #4527A0;
+   margin-bottom:-3rem;
+
+}
+
+ul
+{
+  display:block;
+}
+
+li a:link
+{
+  text-decoration: underline;
+}
+#nav .links , #nav .icons
+{
+  list-style: none;
+  padding-left:0;
+  margin:0 0 0 2rem;
+  overflow:hidden;
+}
+
+.links li
+{
+  margin: 0 0 0 1rem;
+  float:left;
+  border-top:0;
+}
+
+
+a.active
+{
+  color:black;
+}
+#nav .links li a
+{
+  font-size: 18px;
+ display:block;
+ color:black;
+ text-align:center;
+ padding:5px;
+ font-family:"Source Sans Pro", Helvetica, sans-serif;
+ text-decoration:none;
+}
+
+
+.links li.active
+{
+  background-color: white;
+  opacity:0.5;
+  text-decoration: underline;
+}
+
+li .icon
+{
+  position:relative;
+  float:right;
+  font-size:17px;
+  color:black;
+ text-decoration:none;
+}
+
+ul.icons
+{
+  cursor:default;
+  list-style:none;
+  padding:0;
+}
+
+.icon
+{
+  text-decoration: none;
+  border-bottom:none;
+  position: relative;
+}
+
+.logo
+{
+  padding:2rem 1rem 0 1rem;
+}
+
+ #header .logo
+ {
+   margin-top:-34px;
+   padding-top:2rem;
+   visibility: visible;
+   position:relative;
+ }

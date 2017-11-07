@@ -22,11 +22,14 @@ $(() => {
         var address = Cookies.get('destinationLoc');
         geocoder.geocode({ 'address': address }, function (results, status) {
             if (status === 'OK') {
+
+                // for getDetails
                 var place_id = results[0].place_id;
                 getListPic(place_id);
-                // request.location = results[0].geometry.location;
-                // request.query = address;
 
+                // for textSearch
+                // request.location = results[0].geometry.location;
+                // request.query = 'tourist';
                 // service.textSearch(request, callback);
             } else {
                 alert('Geocode was not successful for the following reason: ' + status);
@@ -35,15 +38,18 @@ $(() => {
 
     }
 
+    // callback for textSearch
+
     function callback(results, status) {
         if (status === "OK") {
-            var dtCallback = [results.photos.length];
-            for (var i = 0; i < results.photos.length; i++) {
+            var dtCallback = [results.length];
+            for (var i = 0; i < results.length; i++) {
                 var picInfo = {};
                 picInfo.id = i;
                 picInfo.link = "#";
+                picInfo.address = results[i].formatted_address;
                 // picInfo.src = results.photos[i].getUrl();
-                picInfo.src = results.photos[i].getUrl({
+                picInfo.src = results[i].photos[0].getUrl({
                     'maxWidth': 1800,
                     'maxHeight': 1200
                 });

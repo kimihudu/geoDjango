@@ -31,7 +31,7 @@
             <ul class="links">
                 <li><a href="{% url 'home' %}">HOME</a></li>
                 <li class="active"><a href="{% url 'transport' %}">Tranpsort</a></li>
-                <li><a href="{% url 'takeatour' %}">Take a Tour</a>/a></li>
+                <li><a href="{% url 'takeatour' %}">Take a Tour</a></li>
                 <li><a href="{% url 'contactus' %}">Contact Us</a></li>
             </ul>
             <ul class="icons">
@@ -50,8 +50,7 @@
                     <div id="map"></div>
                     <div class="searchform">
                         <form>
-                            <h4 class="titlesrch">Travel search:</h4>
-                            <br>
+                            <!--<h4 class="titlesrch">Travel search:</h4>-->
                             <input type="text" id="trsptstart" placeholder="Starting point">
                             <input type="text" id="trsptdest" placeholder="Destination">
                             <br>
@@ -132,7 +131,20 @@
 
         <footer id="footerid">
             <div class="footercontainer">
-                <img src="./images/fotimg.jpg" alt="footer_img" class="footerimg">
+                <img src="{% static 'assets/images/fotimg.jpg' %}" alt="footer_img" class="footerimg">
+                <div style="top: 8px;font-size:19px">
+                    </br>
+                </div>
+
+                <!-- <h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+						 -->
+
             </div>
 
         </footer>
